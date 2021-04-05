@@ -12,7 +12,7 @@ pipeline {
             ''' 
       }
     }
-    stages ('build') {
+    stage ('build') {
       steps {
         sh 'mvn clean package'
       }
